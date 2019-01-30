@@ -70,3 +70,6 @@ typings/
 
 # Lock
 package-lock.json
+
+# Local files
+tst.js
