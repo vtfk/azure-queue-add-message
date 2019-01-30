@@ -3,7 +3,7 @@
 
 # azure-queue-add-message
 
-Convenience wrapper for adding json messages to service bus queues
+Convenience wrapper for adding json messages to [Azure service bus queues](https://docs.microsoft.com/en-us/azure/service-bus-messaging/).
 
 ## Usage
 
