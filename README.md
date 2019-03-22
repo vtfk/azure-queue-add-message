@@ -12,7 +12,8 @@ Convenience wrapper for adding json messages to [Azure service bus queues](https
 (async () => {
   const azureQueue = require('azure-queue-add-message')({
     connectionString: '<myConnectionString>',
-    queueName: 'myQueueName'
+    queueName: 'myQueueName', // queueName or topicName is required
+    topicName: 'myTopicName' // queueName or topicName is required
   })
   const message = {
     id: 123,

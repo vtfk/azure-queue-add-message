@@ -7,6 +7,9 @@ module.exports = options => {
   if (!options.connectionString) {
     throw Error('Missing required input: options.connectionString')
   }
+  if (!options.topicName || !options.queueName) {
+    throw Error('Missing required input: missing options.topicName or options.queueName')
+  }
 
   const sbService = azure.createServiceBusService(options.connectionString)
 
@@ -20,9 +23,15 @@ module.exports = options => {
         body: JSON.stringify(messageBody),
         contentType: 'application/json'
       }
-      sbService.sendQueueMessage(options.queueName, message, error => {
-        return error ? reject(error) : resolve(message)
-      })
+      if (options.queueName) {
+        sbService.sendQueueMessage(options.queueName, message, error => {
+          return error ? reject(error) : resolve(message)
+        })
+      } else if (options.topicName) {
+        sbService.sendTopicMessage(options.topicName, message, error => {
+          return error ? reject(error) : resolve(message)
+        })
+      }
     })
   }
 }
