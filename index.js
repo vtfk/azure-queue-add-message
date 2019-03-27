@@ -7,7 +7,7 @@ module.exports = options => {
   if (!options.connectionString) {
     throw Error('Missing required input: options.connectionString')
   }
-  if (!options.topicName || !options.queueName) {
+  if (!options.topicName && !options.queueName) {
     throw Error('Missing required input: missing options.topicName or options.queueName')
   }
 
