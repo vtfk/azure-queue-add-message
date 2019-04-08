@@ -29,7 +29,7 @@
     "standard": "12.0.1"
   },
   "dependencies": {
-    "azure-sb": "0.10.6"
+    "azure-sb": "0.11.0"
   },
   "engines": {
     "node": ">=10.15.3"
