@@ -1,6 +1,6 @@
 {
   "name": "azure-queue-add-message",
-  "version": "2.1.1",
+  "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -16,12 +16,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/telemark/azure-queue-add-message.git"
+    "url": "git+https://github.com/vtfk/azure-queue-add-message.git"
   },
   "bugs": {
-    "url": "https://github.com/telemark/azure-queue-add-message/issues"
+    "url": "https://github.com/vtfk/azure-queue-add-message/issues"
   },
-  "homepage": "https://github.com/telemark/azure-queue-add-message#readme",
+  "homepage": "https://github.com/vtfk/azure-queue-add-message#readme",
   "devDependencies": {
     "ava": "2.4.0",
     "coveralls": "3.0.7",

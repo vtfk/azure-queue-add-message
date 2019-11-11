@@ -1,5 +1,5 @@
 
-[![Build Status](https://travis-ci.com/telemark/azure-queue-add-message.svg?branch=master)](https://travis-ci.com/telemarks/azure-queue-add-message)
+[![Build Status](https://travis-ci.com/vtfk/azure-queue-add-message.svg?branch=master)](https://travis-ci.com/telemarks/azure-queue-add-message)
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
 
 # azure-queue-add-message
