@@ -1,5 +1,5 @@
 {
-  "name": "azure-queue-add-message",
+  "name": "@vtfk/azure-queue-add-message",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
