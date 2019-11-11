@@ -14,7 +14,7 @@ module.exports = options => {
   const sbService = azure.createServiceBusService(options.connectionString)
 
   return (messageBody) => {
-    return new Promise(async (resolve, reject) => {
+    return new Promise((resolve, reject) => {
       if (!messageBody) {
         throw Error('Missing required input: messageBody')
       }
