@@ -1,4 +1,4 @@
-name: Publish Node Package
+name: Build, Test, and Publish on release
 
 on:
   release:
